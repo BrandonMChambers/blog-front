@@ -36,6 +36,6 @@ export class BlogFormComponent implements OnInit {
       ownerId: this.currentUser.id,
       ownerName: this.currentUser.username
     };
-    this.blogService.addBlog(blogToAdd).subscribe(_ => this.location.go("/home"));
+    this.blogService.addBlog(blogToAdd).subscribe(_ => this.location.go("/"));
   }
 }
