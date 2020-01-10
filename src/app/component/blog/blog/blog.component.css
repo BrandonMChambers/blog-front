@@ -1,0 +1,31 @@
+
+.wrapper {
+    text-align: left;
+    padding: 2% 5% 5% 5%;
+    margin: 10px;
+    background-color: #4e4e4e;
+}
+
+.blog-info {
+    text-align: left;
+    padding: 2%;
+    margin-bottom: 10px;
+    background-color: #8f8f8f;
+}
+
+.blog-info h1 {
+    margin: 0;
+    font-style: italic;
+    font-size: 3rem;
+    border-bottom: 2px solid #6e6e6e;
+}
+
+.blog-author {
+    padding-left: 5%;
+    font-style: italic;
+    border-bottom: 2px solid #6e6e6e;
+}
+
+.blog-desc {
+    margin: 10px 0;
+}

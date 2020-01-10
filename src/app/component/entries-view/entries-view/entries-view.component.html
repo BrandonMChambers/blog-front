@@ -1,0 +1,18 @@
+<div>
+    <div *ngFor="let entry of entries">
+        <a routerLink="/blog/{{blogId}}/entry/{{entry.id}}">
+            <div class="entry-container">
+                <div class="entry-title">{{entry.title}}
+                    <!-- <a routerLink="/blog/{{blogId}}/entry/{{entry.id}}">{{entry.title}}</a> -->
+                </div>
+                <div class="entry-info">
+                    <label id="name">Written by <span>{{entry.authorName}}</span></label>
+                    <label id="date">{{entry.createdOn}}</label>
+                </div>
+                <div class="entry-body">
+                    <p>{{entry.body}}</p>
+                </div>    
+            </div>
+        </a>
+    </div>
+</div>

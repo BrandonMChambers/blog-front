@@ -1,0 +1,13 @@
+<div class="comment-form-container">
+    <div class="form-header">
+        <label>Leave a comment</label>
+    </div>
+    <div class="comment-form">
+        <form>
+            <textarea #commentBody class="comment-input" ></textarea>
+            <div>        
+                <button (click)="addComment(commentBody.value); commentBody.value=''">save</button>
+            </div>
+        </form>
+    </div>
+</div>

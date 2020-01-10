@@ -1,0 +1,56 @@
+.wrapper {
+    border: 2px solid #6e6e6e;
+    background-color: #8f8f8f;
+    padding: 0 5% 2% 5%;
+}
+
+.comment-view {
+    background-color: #8f8f8f;
+    border: 1px solid #6e6e6e;
+    margin-bottom: 5px;
+}
+
+.comment-header {
+    background-color: #6e6e6e;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    padding-left: 5%;
+}
+
+.author {
+    font-weight: 800;
+}
+
+.timestamp {
+    font-style: italic;
+}
+
+.manage-comments {
+    background-color: #6e6e6e;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.comment-body-container {
+    background-color: #afafaf;
+    padding: 0 5%;
+}
+
+.comment-body {
+    padding: 5px 0;
+}
+
+
+form {
+    width: 100%;
+}
+
+.comment-form {
+    padding: 0 5%;
+}
+
+.comment-input {
+    margin: 5px 0;
+    width: 100%;
+    padding: 1%;
+}

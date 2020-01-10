@@ -1,0 +1,42 @@
+<div class="wrapper">
+    <h2>Comments</h2>
+    <div class="not-comment-view" *ngFor="let comment of comments">
+        <div class="comment-view">
+            <div class="comment-header">
+                <label class="author">{{comment.authorName}}</label>
+                <label class="timestamp">{{comment.createdOn}}</label>
+                <div class="manage-comments">
+                    <button (click)="setEditCommentId(comment.id)">edit</button>
+                    <button (click)="deleteComment(comment.id)">delete</button>
+                </div>
+            </div>
+            <div class="comment-body-container" *ngIf="comment.id != editCommentId">
+                <div class="comment-body">{{comment.body}}</div>
+            </div>
+            <div class="comment-form" *ngIf="comment.id == editCommentId">
+                <form>
+                    <textarea #editCommentBody class="comment-input">{{comment.body}}</textarea>
+                    <div>        
+                        <button (click)="editComment(comment, editCommentBody.value); editCommentId=-1">save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <app-comment-form></app-comment-form>
+</div>
+
+<!-- <div class="comment-container-grid">
+    <div class="comment-about">
+        <label class="username"></label>
+        <label class="timestamp"></label>
+        <div class="buttons">
+            <button>edit</button>
+            <button>delete</button>
+        </div>
+     <label *ngIf="comment.authorId == currentUser.id"></label>
+    </div>
+    <div class="comment-content">
+        <div></div>
+    </div>
+</div> -->

@@ -9,7 +9,6 @@ import { Blog } from 'src/app/model/blog';
 })
 export class HomeComponent implements OnInit {
  blogs: Blog[] = [];
-  // blogs: Blog[] = [];
 
   constructor(private blogService: BlogService) { }
 

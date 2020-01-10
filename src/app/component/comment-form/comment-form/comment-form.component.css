@@ -1,0 +1,28 @@
+.comment-form-container {
+    background-color: #afafaf;
+    border: 1px solid #6e6e6e;
+    margin-top: 5%;
+}
+
+.form-header {
+    background-color: #6e6e6e;
+    padding: 0 5%;
+}
+
+.form-header label {
+    font-weight: 800;
+}
+
+form {
+    width: 100%;
+}
+
+.comment-form {
+    padding: 0 5%;
+}
+
+.comment-input {
+    margin: 5px 0;
+    width: 100%;
+    padding: 1%;
+}

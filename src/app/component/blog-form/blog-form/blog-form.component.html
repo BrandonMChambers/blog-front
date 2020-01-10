@@ -1,0 +1,6 @@
+<h1>Create New Blog</h1>
+<div>
+    <p>Blog Title: <input #title /></p>
+    <p>Blog Description: <textarea #description ></textarea></p>
+    <button (click)="addBlog(title.value, description.value);" routerLink="/">create</button>
+</div>

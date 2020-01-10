@@ -1,0 +1,38 @@
+.entry-container {
+    background-color: #8f8f8f;
+    display: grid;
+    color: #0e0e0e;
+    border-bottom: 1px solid #6e6e6e;
+    padding: 2% 5% 2% 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.entry-title {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 800;
+    /* margin-left: 10px; */
+}
+
+.entry-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.entry-info #name {
+    text-align: left;
+}
+
+.entry-info #name span {
+    font-style: italic;
+}
+
+.entry-info #date {
+    text-align: right;
+    font-style: italic;
+}
+/* TODO: add @media tag to deal with smaller width screens */

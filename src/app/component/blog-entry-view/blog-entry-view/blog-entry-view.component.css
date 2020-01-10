@@ -1,0 +1,58 @@
+.wrapper {
+    text-align: left;
+    padding: 2% 5% 5% 5%;
+    margin: 10px;
+    background-color: #4e4e4e;
+}
+
+.blog-title {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.blog-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.entry {
+    background-color: #8f8f8f;
+    margin-bottom: 10px;
+    padding: 2%;
+}
+
+.blog-entry-title {
+    margin-bottom: 0;
+    border-bottom: 2px solid #6e6e6e;
+}
+
+.blog-entry-author {
+    font-style: italic;
+    border-bottom: 2px solid #6e6e6e;
+    padding-left: 5%;
+}
+
+#body {
+    padding: 1% 2%;
+    background-color: #afafaf;
+    margin: 2% 1% 0 1%;
+}
+
+form {
+    width: 100%;
+}
+
+.entry-form {
+    padding: 0 5%;
+}
+
+.entry-input {
+    margin: 5px 0;
+    width: 100%;
+    padding: 1%;
+}
+
+form button {
+    width: 100%;
+}
