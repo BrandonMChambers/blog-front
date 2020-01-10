@@ -1,0 +1,13 @@
+<div class="wrapper">
+    <h1>Featured Blogs</h1>
+    <div class="blog-container" *ngFor="let blog of blogs">
+        <label class="blog-name">
+            <a routerLink="/blog/{{blog.id}}">
+                {{blog.title}}
+            </a>
+        </label>
+        <div class="blog-desc">{{blog.description}}</div>
+        <div class="blog-author">{{blog.ownerName}}</div>        
+    </div>
+    <h1><a routerLink="/create/blog">Create a blog</a></h1>
+</div>
