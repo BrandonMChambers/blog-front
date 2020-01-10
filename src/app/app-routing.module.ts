@@ -13,10 +13,7 @@ const routes: Routes = [
   { path: 'blog/:blogId', component: BlogComponent },
   { path: 'blog/:blogId/entry/:entryId', component: BlogEntryViewComponent },
   { path: 'create/blog', component: BlogFormComponent },
-  { path: 'blog/:blogId/create', component: EntryFormComponent },
-  { path: 'blog/:blogId/entry/:entryId?', redirectTo: '/blog/:blogId/entry/:entryId', pathMatch: 'full' },
-  { path: 'blog/:blogId?', redirectTo: '/blog/:blogId', pathMatch: 'full' }
-
+  { path: 'blog/:blogId/create', component: EntryFormComponent }
 ];
 
 @NgModule({
