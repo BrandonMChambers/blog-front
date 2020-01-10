@@ -26,7 +26,7 @@ export class EntryFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  addBlogEntry(title: string, body: string, ) {
+  addBlogEntry(title: string, body: string) {
     const entry: BlogEntry = {
       id: null,
       authorId: this.currentUser.id,
