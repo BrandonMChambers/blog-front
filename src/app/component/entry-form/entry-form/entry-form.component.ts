@@ -36,7 +36,7 @@ export class EntryFormComponent implements OnInit {
       createdOn: new Date(),
       blogId: +this.route.snapshot.paramMap.get('blogId')
     };
-    this.entryService.addBlogEntry(entry).subscribe(_ => this.location.go(`/blog/${+this.route.snapshot.paramMap.get('blogId')}`));
+    this.entryService.addBlogEntry(entry).subscribe(_ => this.location.back());//.go(`/blog/${entry.blogId}`));
   }
 
   goBack() {
