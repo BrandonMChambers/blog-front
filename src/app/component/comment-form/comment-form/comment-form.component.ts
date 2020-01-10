@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 import { Comment } from 'src/app/model/comment';
 import { User } from 'src/app/model/user';
@@ -20,6 +21,7 @@ export class CommentFormComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private location: Location,
     private commentService: CommentService
   ) { }
 
@@ -35,6 +37,6 @@ export class CommentFormComponent implements OnInit {
       authorName: this.user.username,
       blogEntryId: +this.route.snapshot.paramMap.get('entryId')
     };
-    this.commentService.addComment(comment).subscribe();  // refactor?
+    this.commentService.addComment(comment).subscribe();//_ => this.location.go(`/blog/${+this.route.snapshot.paramMap.get('blogId')}/entry/${+this.route.snapshot.paramMap.get('entryId')}`));  // refactor?
   }
 }

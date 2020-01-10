@@ -40,7 +40,7 @@ export class EntryFormComponent implements OnInit {
   }
 
   goBack() {
-    this.location.go(`/blog/${+this.route.snapshot.paramMap.get('blogId')}`);
+    // this.location.go(`/blog/${+this.route.snapshot.paramMap.get('blogId')}`);
   }
 
 }
