@@ -14,15 +14,9 @@ import { CommentsViewComponent } from './component/comments-view/comments-view/c
 import { CommentFormComponent } from './component/comment-form/comment-form/comment-form.component';
 import { BlogcastHeaderComponent } from './component/blogcast-header/blogcast-header/blogcast-header.component';
 import { BlogEntryViewComponent } from './component/blog-entry-view/blog-entry-view/blog-entry-view.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
-const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'blog/:blogId', component: BlogComponent },
-  { path: 'blog/:blogId/entry/:entryId', component: BlogEntry },
-  { path: 'create/blog', component: BlogFormComponent },
-  { path: 'blog/:blogId/create', component: EntryFormComponent}
-];
 
 @NgModule({
   declarations: [
@@ -40,11 +34,10 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
-  exports: [ RouterModule ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-export class AppRoutingModule { }
